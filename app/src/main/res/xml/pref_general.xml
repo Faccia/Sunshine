@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditTextPreference
+        android:key="@string/pref_location_key"
+        android:title="@string/pref_location_title"
+        android:inputType="text"
+        android:singleLine="true"
+        android:defaultValue="Moscow" />
+    <ListPreference
+        android:key="@string/pref_tempUnits_key"
+        android:title="@string/pref_tempUnits_title"
+        android:defaultValue="@string/pref_tempUnits_default"
+        android:entries="@array/pref_tempUnitsArray_entries"
+        android:entryValues="@array/pref_tempUnitsArray_values" />
+
+</PreferenceScreen>
